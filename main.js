@@ -1,6 +1,5 @@
 const { app, BrowserWindow, ipcMain, Menu, Tray, dialog} = require('electron')
 const path = require('path');
-const { preload } = require('react-dom');
 
 let window;
 function createBrowserWindow() {
