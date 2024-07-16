@@ -1,0 +1,24 @@
+{
+  "name": "black-out",
+  "productName": "black-out",
+  "version": "1.0.0",
+  "description": "Black out portions of the screen.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "yo7s.black-out",
+    "productName": "Black-Out",
+    "icon": "renderer/img/icon.ico"
+  },
+  "author": "Yo7",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^31.2.1",
+    "electron-builder": "^24.13.3"
+  }
+}

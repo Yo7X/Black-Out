@@ -1,0 +1,33 @@
+body {
+    color: white;
+    background: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1, h3, p {
+    margin: 0px;
+}
+
+.number {
+    width: 75px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    border: 1px solid white;
+    color: white;
+    text-shadow: 1px 1px 10px;
+    background: linear-gradient(60deg, rgb(74, 0, 74), rgb(69, 0, 96));
+    cursor: pointer;
+    border-radius: 5%;
+
+    transition: width 0.5s ease-in-out;
+}
+
+button:hover {
+    width: 275px;
+    transition: width 0.2s ease-out;
+}

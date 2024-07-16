@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+    <h1>Black out</h1>
+    <h3>By Yo7</h3>
+
+    <br>
+
+    <h3>Monitor width</h3>
+    <p id="windowSizeDisplay">Calculating</p>
+
+    <br>
+
+    <h3>Customize covered area</h3>
+    <br>
+    <p>
+        Cover 1 <br>
+        From <input id="coverOneStart" type="number" class="number">
+        to <input id="coverOneEnd" type="number" class="number">
+        <br><br>
+        Cover 2 <input id="coverTwoCheck" type="checkbox"> <br>
+        From <input id="coverTwoStart" type="number" class="number">
+        to <input id="coverTwoEnd" type="number" class="number">
+    </p>
+
+    <br>
+
+    <button id="startButton">Create covers</button>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('windowSizeDisplay').innerHTML = `${window.screen.width}`
+
+            document.getElementById('coverOneStart').value = 0;
+            document.getElementById('coverOneEnd').value = window.screen.width / 3;
+
+            document.getElementById('coverTwoStart').value = window.screen.width / 3 + window.screen.width / 2;
+            document.getElementById('coverTwoEnd').value = window.screen.width;
+        })
+    </script>
+</body>
+</html>
